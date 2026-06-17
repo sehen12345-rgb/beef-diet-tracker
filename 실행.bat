@@ -1,5 +1,9 @@
 @echo off
 chcp 65001 >nul
-set PATH=%LOCALAPPDATA%\Programs\Python\Python311;%LOCALAPPDATA%\Programs\Python\Python311\Scripts;%PATH%
 cd /d "%~dp0"
-python main.py
+"C:\Users\com\AppData\Local\Programs\Python\Python311\python.exe" main.py
+if %errorlevel% neq 0 (
+    echo.
+    echo 오류가 발생했습니다. 위 내용을 캡처해서 알려주세요.
+    pause
+)
