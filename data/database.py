@@ -56,6 +56,7 @@ def init_db():
                 purchase_date TEXT NOT NULL,
                 notes TEXT
             );
+
         """)
 
 # ── settings ─────────────────────────────────────────────
