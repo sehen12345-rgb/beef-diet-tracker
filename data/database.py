@@ -28,7 +28,6 @@ def init_db():
             );
 
             CREATE TABLE IF NOT EXISTS weight_log (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
                 log_date TEXT PRIMARY KEY,
                 weight_kg REAL NOT NULL
             );
